@@ -7,24 +7,28 @@
     <h1>Form Example</h1>
     <br>
     <form>
-      <label for="entry_name">Name:</label>
-      <input type="text" id="entry_name" name="entry_name" maxlength="20">
-      <br>
-      <label for="secret">Secret Key:</label>
-      <input type="Password" name="Secret" id="Secret" size="15" maxlength="10" required>
-      <br>
-      
-      <label for="year">Year:</label>
-      <select id="year" name="year">
-        <option value="freshman">Freshman</option>
-        <option value="sophomore">Sophomore</option>
-        <option value="junior">Junior</option>
-        <option value="senior">Senior</option>
-      </select>
-      
-      <br>
-      <label for="colors">Colors:</label>
-      <select id="color" name="color" multiple>
+      <fieldset>
+        <legend>Practice Form</legend>
+        <fieldset>
+          <label for="entry_name">Name:</label>
+          <input type="text" id="entry_name" name="entry_name" maxlength="20">
+          <br>
+          <label for="secret">Secret Key:</label>
+          <input type="Password" name="Secret" id="Secret" size="15" maxlength="10" required>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label for="year">Year:</label>
+          <select id="year" name="year">
+          <option value="freshman">Freshman</option>
+          <option value="sophomore">Sophomore</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          </select>
+        </fieldset>
+        <br>
+        <label for="colors">Colors:</label>
+        <select id="color" name="color" multiple>
         <option value="white">White</option>
         <option value="blue">Blue</option>
         <option value="black">Black</option>
@@ -54,7 +58,10 @@
       <input type="checkbox" id="interest" name="interest" value="interest">
       <label for="required">Interest for this class</label>
       <br>
+  
+      <input type="submit" value="Submit">
       
+    </fieldset>
     </form>
   </body>
 </html>
